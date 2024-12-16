@@ -1,11 +1,13 @@
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors'); // Tilføjet CORS for at tillade cross-origin requests
 const fetch = require('node-fetch');
 const app = express();
 
 const API_KEY = process.env.OPENAI_API_KEY;
 
+app.use(cors()); // Aktiver CORS
 app.use(bodyParser.json());
 app.use(express.static('public')); // Serves the HTML file
 
