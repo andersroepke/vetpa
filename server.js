@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(express.static('public')); // Serves the HTML file
 
 const templates = {
-    "Sygt Dyr": `1. Identifikation:
+    "Sygt Dyr": `1. Signalement:
 - Dato: Mangler information fra Dyrlægen
 - Navn: Mangler information fra Dyrlægen
 - ID: Mangler information fra Dyrlægen
@@ -20,62 +20,182 @@ const templates = {
 - Alder: Mangler information fra Dyrlægen
 - Køn: Mangler information fra Dyrlægen
 - Neutralisering: Mangler information fra Dyrlægen
+- Vægt: Mangler information fra Dyrlægen
 
-2. Præsentation:
+2. Henvendelsesårsag:
 Mangler information fra Dyrlægen
 
-3. Henvendelsesårsag:
+3. Anamnese:
 Mangler information fra Dyrlægen
 
-4. Anamnese:
+4. Tidligere relevante sygdomsforløb:
 Mangler information fra Dyrlægen
 
-5. Tidligere relevante sygdomsforløb:
+5. Klinisk undersøgelse:
+- Almentilstand: (BAR/QAR/NR)
+- Cirkulatorisk: Slimhinder oralt er lyserøde og fugtige. Crt > 2 sek. 
+- Auskultation cor: To klare veladskilte hjertetoner, uden tegn på mislyd.
+- Pulsrate: Mangler information fra Dyrlægen
+- Auskultation pulmones: Normal vesiculær respiration bilateralt i hele lungefeltet
+- Respirationstype: thoracoabdominal respiration
+- Lymfeknuder: Palperbare lymfeknuder iab. 
+- Abdomen: blød og indolent, uden tegn på patologiske udfyldninger
+- Tænder og tandkød: iab
+- Ører: iab
+- Øjne: iab
+- Bevægeapparat: iab
+- Mammae/testes: iab
+- BCS: _/9
+- Temperatur: Mangler information fra Dyrlægen
+- Hydreringsstatus: Mangler information fra Dyrlægen
+
+6. IPL (Initial Problem Liste):
+IPL: Mangler information fra Dyrlægen
+
+7. Vurdering:
+AD: Mangler information fra Dyrlægen
+
+8. Differentialdiagnoser:
 Mangler information fra Dyrlægen
 
-6. Klinisk undersøgelse:
+9. Diagnostiske tests inkl. fund :
+- Blodprøver: Mangler information fra Dyrlægen
+- Billeddiagnostik: Mangler information fra Dyrlægen
+- Urinanalyse: ingen information
+- Afføringsprøver: ingen information
+- Indsendte prøver: ingen information om bar-code
+
+10. Vurdering af resultater og fund:
 Mangler information fra Dyrlægen
 
-7. Kliniske fund:
+11. Opdateret problemliste:
 Mangler information fra Dyrlægen
 
-8. IPL (Initial Problem Liste):
+12. Behandlingsplan/Procedurer:
 Mangler information fra Dyrlægen
 
-9. Vurdering:
+13. Terapi:
+- Forbrugt: Mangler information fra Dyrlægen
+- Udleveret: Mangler information fra Dyrlægen
+
+14. Behandlingsplan/Procedurer:
 Mangler information fra Dyrlægen
 
-10. Behandlingsplan:
+15. Plan til evt. videre forløb:
+Mangler information fra Dyrlægen
+
+16. Ejervejledning:
 Mangler information fra Dyrlægen`,
 
-    "Kontrol SOAP": `1. Subjektiv vurdering:
+    "Kontrol SOAP": `1. Signalement:
+- Dato: Mangler information fra Dyrlægen
+- Navn: Mangler information fra Dyrlægen
+- ID: Mangler information fra Dyrlægen
+- Race: Mangler information fra Dyrlægen
+- Alder: Mangler information fra Dyrlægen
+- Køn: Mangler information fra Dyrlægen
+- Neutralisering: Mangler information fra Dyrlægen
+- Vægt: Mangler information fra Dyrlægen
+    
+2. Henvendelsesårsag:
 Mangler information fra Dyrlægen
 
-2. Objektiv vurdering:
+3. Subjektivt:
 Mangler information fra Dyrlægen
 
-3. Analyse:
+3. Objektivitet:
 Mangler information fra Dyrlægen
 
-4. Plan:
+4. Vurdering:
+Mangler information fra Dyrlægen
+
+5. Plan til evt. videre forløb:
+Mangler information fra Dyrlægen
+
+6. Ejervejledning:
 Mangler information fra Dyrlægen`,
 
-    "Vaccination": `1. Identifikation:
+    "Vaccination/Sundhedstjek": `1. Signalement:
+- Dato: Mangler information fra Dyrlægen
+- Navn: Mangler information fra Dyrlægen
+- ID: Mangler information fra Dyrlægen
+- Race: Mangler information fra Dyrlægen
+- Alder: Mangler information fra Dyrlægen
+- Køn: Mangler information fra Dyrlægen
+- Neutralisering: Mangler information fra Dyrlægen
+- Vægt: Mangler information fra Dyrlægen
+
+2. Henvendelsesårsag:
 Mangler information fra Dyrlægen
 
-2. Vaccinationstype:
+3. Anamnese:
 Mangler information fra Dyrlægen
 
-3. Bemærkninger:
+4. Tidligere relevante sygdomsforløb:
+Mangler information fra Dyrlægen
+
+5. Klinisk undersøgelse:
+- Almentilstand: (BAR/QAR/NR)
+- Cirkulatorisk: Slimhinder oralt er lyserøde og fugtige. Crt > 2 sek. 
+- Auskultation cor: To klare veladskilte hjertetoner, uden tegn på mislyd.
+- Auskultation pulmones: Normal vesiculær respiration bilateralt i hele lungefeltet
+- Respirationstype: thoracoabdominal respiration
+- Lymfeknuder: Palperbare lymfeknuder iab. 
+- Abdomen: blød og indolent, uden tegn på patologiske udfyldninger
+- Tænder og tandkød: iab
+- Ører: iab
+- Øjne: iab
+- Bevægeapparat: iab
+- Mammae/testes: iab
+- BCS: _/9
+
+6. IPL (Initial Problem Liste):
+IPL: Mangler information fra Dyrlægen
+
+7. Vurdering:
+AD: Mangler information fra Dyrlægen
+
+8. Terapi:
+- Forbrugt: Mangler information fra Dyrlægen
+- Udleveret: Mangler information fra Dyrlægen
+
+9. Plan til evt. videre forløb:
+Mangler information fra Dyrlægen
+
+10. Ejervejledning:
 Mangler information fra Dyrlægen`,
 
-    "Morgenindtag": `1. Dagens procedurer:
+    "Morgenindtag": `1. Signalement:
+- Dato: Mangler information fra Dyrlægen
+- Navn: Mangler information fra Dyrlægen
+- ID: Mangler information fra Dyrlægen
+- Race: Mangler information fra Dyrlægen
+- Alder: Mangler information fra Dyrlægen
+- Køn: Mangler information fra Dyrlægen
+- Neutralisering: Mangler information fra Dyrlægen
+- Vægt: Mangler information fra Dyrlægen
+
+2. Henvendelsesårsag:
 Mangler information fra Dyrlægen
 
-2. Medicinering:
+3. Tidligere relevante sygdomsforløb:
 Mangler information fra Dyrlægen
 
-3. Observationer:
+4. Klinisk undersøgelse:
+- Almentilstand: (BAR/QAR/NR)
+- Cirkulatorisk: Slimhinder oralt er lyserøde og fugtige. Crt > 2 sek. 
+- Auskultation cor: To klare veladskilte hjertetoner, uden tegn på mislyd.
+- Auskultation pulmones: Normal vesiculær respiration bilateralt i hele lungefeltet
+- Lymfeknuder: Palperbare lymfeknuder iab. 
+- BCS: _/9
+
+5. IPL (Initial Problem Liste):
+IPL: Mangler information fra Dyrlægen
+
+6. Plan til evt. videre forløb:
+Mangler information fra Dyrlægen
+
+7. Ejervejledning:
 Mangler information fra Dyrlægen`
 };
 
