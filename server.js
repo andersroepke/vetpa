@@ -257,7 +257,7 @@ app.post('/api/summary', async (req, res) => {
             body: JSON.stringify({
                 model: 'gpt-4',
                 messages: [
-                    { role: 'system', content: "Lav en kort, ejerrettet opsummering af journalen." },
+                    { role: 'system', content: "Lav en kort, ejerrettet opsummering af journalen. Ejeren kan være meget følelsesmæssigt påvirket. Ejeren kan også være mere interesseret i dyret som brugsdyr og dermed være mindre følelesesmæssigt berørt. Uanset ejertypen, så skal der sammenfattes en kort ejerbesked der er personlig" },
                     { role: 'user', content: journalContent },
                 ],
             }),
