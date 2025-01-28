@@ -234,7 +234,7 @@ app.post('/api/generate', async (req, res) => {
                 Authorization: `Bearer ${API_KEY}`,
             },
             body: JSON.stringify({
-                model: 'ft:gpt-3.5-turbo-0125:personal:test:AsXgJPcs',
+                model: 'ft:gpt-3.5-turbo-0125:personal:morgen:AunAAgeJ',
                 messages: [
                     { role: 'system', content: `Du er VetPA, en veterinær personlig assistent designet til at hjælpe med professionel journalføring. Brug følgende skabelon: ${template}` },
                     { role: 'user', content: userInput },
