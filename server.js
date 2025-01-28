@@ -181,21 +181,36 @@ Mangler information fra Dyrlægen
 3. Tidligere relevante sygdomsforløb:
 Mangler information fra Dyrlægen
 
-4. Klinisk undersøgelse:
+4. Fastet:
+Mangler information fra Dyrlægen
+
+5. Anamese:
+Mangler information fra Dyrlægen
+
+6. Klinisk undersøgelse:
 - Almentilstand: (BAR/QAR/NR)
 - Cirkulatorisk: Slimhinder oralt er lyserøde og fugtige. Crt > 2 sek. 
 - Auskultation cor: To klare veladskilte hjertetoner, uden tegn på mislyd.
 - Auskultation pulmones: Normal vesiculær respiration bilateralt i hele lungefeltet
 - Lymfeknuder: Palperbare lymfeknuder iab. 
 - BCS: _/9
+- Andet
 
-5. IPL (Initial Problem Liste):
-IPL: Mangler information fra Dyrlægen
+7. IPL (Initial Problem Liste):
+IPL 1: Mangler information fra Dyrlægen
+IPL 2: Mangler information fra Dyrlægen
+IPL 3: Mangler information fra Dyrlægen
 
-6. Plan til evt. videre forløb:
+8. Vurdering:
+Mangler information fra Dyrlægen
+AD 1: Mangler information fra Dyrlægen
+AD 2: Mangler information fra Dyrlægen
+AD 3: Mangler information fra Dyrlægen
+
+9. ASA-score:
 Mangler information fra Dyrlægen
 
-7. Ejervejledning:
+10. Ejervejledning:
 Mangler information fra Dyrlægen`
 };
 
