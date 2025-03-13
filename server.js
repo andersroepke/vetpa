@@ -78,7 +78,7 @@ Mangler information fra Dyrlægen
 - Forbrugt: Mangler information fra Dyrlægen
 - Udleveret: Mangler information fra Dyrlægen
 
-14. Behandlingsplan/Procedurer:
+14. Prognose:
 Mangler information fra Dyrlægen
 
 15. Plan til evt. videre forløb:
