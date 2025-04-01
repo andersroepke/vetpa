@@ -115,7 +115,7 @@ Mangler information fra Dyrlægen
 6. Ejervejledning:
 Mangler information fra Dyrlægen`,
 
-    "Vaccination/Sundhedstjek": `1. Signalement:
+    "Vaccination": `1. Signalement:
 - Dato: Mangler information fra Dyrlægen
 - Navn: Mangler information fra Dyrlægen
 - ID: Mangler information fra Dyrlægen
