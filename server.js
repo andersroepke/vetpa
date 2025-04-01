@@ -227,14 +227,33 @@ app.post('/api/generate', async (req, res) => {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${API_KEY}`,
             },
-            body: JSON.stringify({
-                model: 'ft:gpt-3.5-turbo-0125:personal:morgen:AunAAgeJ',
-                messages: [
-                    { role: 'system', content: `Du er VetPA, en veterinær personlig assistent designet til at hjælpe med professionel journalføring. Brug følgende skabelon med tal og overskrifter: ${template} Du skal altid udfylde hvert punkt i skabelonen og angive tallet for hvert overskrift i skabelonen. Kender du ikke svaret skal du skrive der mangler information fra dyrlægen. Du er velkommen til at spørge efter input til de enkelte journalpunkter så alt bliver fyldt` },
-                    { role: 'user', content: userInput },
-                ],
-            }),
-        });
+    body: JSON.stringify({
+        model: 'ft:gpt-3.5-turbo-0125:personal:morgen:AunAAgeJ',
+        messages: [
+            {
+                role: 'system',
+                content: `
+Du er VetPA, en professionel veterinær personlig assistent, der hjælper med at udfylde dyrlægejournaler ud fra dikterede input.
+
+Du skal bruge følgende skabelon med nummererede overskrifter: ${template}
+
+Følg disse retningslinjer:
+1. Udfyld ALLE punkter i skabelonen – brug numrene og overskrifterne præcist som angivet.
+2. Hvis information mangler i input, skal du skrive: "Mangler information fra dyrlægen" under det relevante punkt.
+3. Du må gerne stille opklarende spørgsmål til dyrlægen for at sikre, at alle journalpunkter bliver dækket korrekt.
+4. Skriv i et klart og fagligt dansk journalsprog – uden forkortelser og i hele sætninger.
+5. Undlad at skrive noget udenfor skabelonen.
+
+Din opgave er at generere en komplet journaltekst ud fra brugerens input.
+`
+            },
+            {
+                role: 'user',
+                content: userInput,
+            },
+        ],
+    }),
+});
 
         const data = await response.json();
 
