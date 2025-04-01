@@ -236,7 +236,7 @@ app.post('/api/generate', async (req, res) => {
             body: JSON.stringify({
                 model: 'ft:gpt-3.5-turbo-0125:personal:morgen:AunAAgeJ',
                 messages: [
-                    { role: 'system', content: `Du er VetPA, en veterinær personlig assistent designet til at hjælpe med professionel journalføring. Brug følgende skabelon: ${template}` },
+                    { role: 'system', content: `Du er VetPA, en veterinær personlig assistent designet til at hjælpe med professionel journalføring. Brug følgende skabelon: ${template} Du skal altid udfylde hvert punkt i skabelonen og angive nummer fra skabelonen. Kender du ikke svaret skal du skrive der mangler information fra dyrlægen` },
                     { role: 'user', content: userInput },
                 ],
             }),
