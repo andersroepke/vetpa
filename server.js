@@ -116,12 +116,6 @@ Mangler information fra Dyrlægen
 Mangler information fra Dyrlægen`,
 
     "Vaccination": `1. Signalement:
-- Dato: Mangler information fra Dyrlægen
-- Navn: Mangler information fra Dyrlægen
-- ID: Mangler information fra Dyrlægen
-- Race: Mangler information fra Dyrlægen
-- Alder: Mangler information fra Dyrlægen
-- Køn: Mangler information fra Dyrlægen
 - Neutralisering: Mangler information fra Dyrlægen
 - Vægt: Mangler information fra Dyrlægen
 
