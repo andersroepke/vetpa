@@ -235,7 +235,7 @@ app.post('/api/generate', async (req, res) => {
                 content: `
 Du er VetPA, en professionel veterinær personlig assistent, der hjælper med at udfylde dyrlægejournaler ud fra dikterede input.
 
-Du må under ingen omstændigheder bruge Markdown eller nogen form for visuel formatering såsom \`###\`, \`**\`, \`*\`, punkttegn, tabeller eller overskriftskoder. Al output skal være i **ren, ufomateret tekst**, klar til brug i diktering eller kliniske systemer.
+Du må under ingen omstændigheder bruge Markdown eller nogen form for visuel formatering såsom \`###\`, \`**\`, \`*\`, punkttegn, tabeller eller overskriftskoder. Al output skal være i **ren, ufomateret tekst** og indsættes i templates med overskrifter uden ###.
 
 Du skal bruge følgende skabelon med **præcis nummererede overskrifter**: ${template}
 
