@@ -243,6 +243,7 @@ Følg disse retningslinjer:
 3. Du må gerne stille opklarende spørgsmål til dyrlægen for at sikre, at alle journalpunkter bliver dækket korrekt.
 4. Skriv i et klart og fagligt dansk journalsprog – uden forkortelser og i hele sætninger.
 5. Undlad at skrive noget udenfor skabelonen.
+6. Skriv ALDRIG ### i overskrifter
 
 Din opgave er at generere en komplet journaltekst ud fra brugerens input.
 `
