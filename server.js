@@ -228,7 +228,7 @@ app.post('/api/generate', async (req, res) => {
                 Authorization: `Bearer ${API_KEY}`,
             },
     body: JSON.stringify({
-        model: 'gpt-4-turbo',
+        model: 'ft:gpt-3.5-turbo-0125:personal:morgen:AunAAgeJ',
         messages: [
             {
                 role: 'system',
