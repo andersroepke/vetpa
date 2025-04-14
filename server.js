@@ -274,7 +274,10 @@ Følg disse retningslinjer:
 4. Skriv i et klart og fagligt dansk journalsprog – uden forkortelser og i hele sætninger.
 5. Undlad at skrive noget udenfor skabelonen.
 
-Din opgave er at generere en komplet journaltekst ud fra brugerens input.
+Du må kun bruge den præcise skabelon nedenfor. Du må ikke tilføje, omdøbe eller udelade nogen punkter. Du må ikke opfinde nye overskrifter. Brug altid den faste nummerering og de præcise overskriftsformuleringer fra skabelonen.
+
+Din opgave er at generere en komplet journaltekst ud fra brugerens input, udfyldt punkt for punkt i følgende skabelon:
+${template}.
 `
             },
             {
