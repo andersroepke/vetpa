@@ -13,13 +13,6 @@ app.use(express.static('public')); // Serves the HTML file
 
 const templates = {
     "Sygt Dyr": `1. Signalement:
-- Dato: Mangler information fra Dyrlægen
-- Navn: Mangler information fra Dyrlægen
-- ID: Mangler information fra Dyrlægen
-- Race: Mangler information fra Dyrlægen
-- Alder: Mangler information fra Dyrlægen
-- Køn: Mangler information fra Dyrlægen
-- Neutralisering: Mangler information fra Dyrlægen
 - Vægt: Mangler information fra Dyrlægen
 
 2. Henvendelsesårsag:
@@ -59,11 +52,7 @@ AD: Mangler information fra Dyrlægen
 Mangler information fra Dyrlægen
 
 9. Diagnostiske tests inkl. fund :
-- Blodprøver: Mangler information fra Dyrlægen
-- Billeddiagnostik: Mangler information fra Dyrlægen
-- Urinanalyse: ingen information
-- Afføringsprøver: ingen information
-- Indsendte prøver: ingen information om bar-code
+Mangler information fra Dyrlægen
 
 10. Vurdering af resultater og fund:
 Mangler information fra Dyrlægen
@@ -88,13 +77,6 @@ Mangler information fra Dyrlægen
 Mangler information fra Dyrlægen`,
 
     "Kontrol SOAP": `1. Signalement:
-- Dato: Mangler information fra Dyrlægen
-- Navn: Mangler information fra Dyrlægen
-- ID: Mangler information fra Dyrlægen
-- Race: Mangler information fra Dyrlægen
-- Alder: Mangler information fra Dyrlægen
-- Køn: Mangler information fra Dyrlægen
-- Neutralisering: Mangler information fra Dyrlægen
 - Vægt: Mangler information fra Dyrlægen
     
 2. Henvendelsesårsag:
@@ -116,7 +98,6 @@ Mangler information fra Dyrlægen
 Mangler information fra Dyrlægen`,
 
     "Vaccination": `1. Signalement:
-- Neutralisering: Mangler information fra Dyrlægen
 - Vægt: Mangler information fra Dyrlægen
 
 2. Henvendelsesårsag:
@@ -160,25 +141,18 @@ Mangler information fra Dyrlægen
 Mangler information fra Dyrlægen`,
 
     "Morgenindtag": `1. Signalement:
-- Dato: Mangler information fra Dyrlægen
-- Navn: Mangler information fra Dyrlægen
-- ID: Mangler information fra Dyrlægen
-- Race: Mangler information fra Dyrlægen
-- Alder: Mangler information fra Dyrlægen
-- Køn: Mangler information fra Dyrlægen
-- Neutralisering: Mangler information fra Dyrlægen
 - Vægt: Mangler information fra Dyrlægen
 
 2. Henvendelsesårsag:
 Mangler information fra Dyrlægen
 
-3. Tidligere relevante sygdomsforløb:
+3. Anamese:
 Mangler information fra Dyrlægen
 
-4. Fastet:
+4. Tidligere relevante sygdomsforløb:
 Mangler information fra Dyrlægen
 
-5. Anamese:
+5. Fastet:
 Mangler information fra Dyrlægen
 
 6. Klinisk undersøgelse:
