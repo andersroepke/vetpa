@@ -78,24 +78,31 @@ Mangler information fra Dyrlægen`,
 
     "Kontrol SOAP": `1. Signalement:
 - Vægt: Mangler information fra Dyrlægen
-    
+[MODELNOTE: Angiv dyrets aktuelle vægt. Notér også ændringer i vægt siden sidste konsultation, hvis det fremgår.]
+
 2. Henvendelsesårsag:
 Mangler information fra Dyrlægen
+[MODELNOTE: Beskriv kort og præcist, hvad kontrollen drejer sig om, fx “Kommer til kontrol efter sterilisation for 10 dage siden” eller “Kontrol efter GI-problem pga. fortsat løs afføring.”]
 
 3. Subjektivt:
 Mangler information fra Dyrlægen
+[MODELNOTE: Gengiv ejerens egne observationer. Hvornår startede symptomerne? Er der ændringer i adfærd, appetit, drikkelyst eller energi? Undgå kliniske vurderinger.]
 
-3. Objektivitet:
+4. Objektivt:
 Mangler information fra Dyrlægen
+[MODELNOTE: Nedskriv fund fra den kliniske undersøgelse og evt. testresultater. Beskriv konkret almen tilstand, kredsløb, respiration, osv. Undlad vurderinger.]
 
-4. Vurdering:
+5. Vurdering:
 Mangler information fra Dyrlægen
+[MODELNOTE: Samlet analyse og faglig vurdering. Hvilke problemer er identificeret? Hvad er mest sandsynligt? Brug POMR-tankegang.]
 
-5. Plan til evt. videre forløb:
+6. Plan til evt. videre forløb:
 Mangler information fra Dyrlægen
+[MODELNOTE: Praktisk og handlingsorienteret plan. Inkluder fx kontrol, behandling, hjemmerutiner, og hvad der skal ske ved forværring eller manglende bedring.]
 
-6. Ejervejledning:
-Mangler information fra Dyrlægen`,
+7. Ejervejledning:
+Mangler information fra Dyrlægen
+[MODELNOTE: Kort opsummering af, hvad ejeren er informeret om. Inkluder forklaring af diagnose, behandling, opfølgning og hjemmemonitorering.]`,
 
     "Vaccination": `1. Signalement:
 - Vægt: Mangler information fra Dyrlægen
