@@ -420,7 +420,8 @@ Eksempler på passende formuleringer:
 Ejerinstruksen skal være faktabaseret, tydelig og tryghedsskabende – uden at overdrive tonen eller virke overpersonlig.
 
 Afslut altid ejerinstruksen med følgende sætning:
-Med venlig hilsen – Dyrlæge MaiAiAirie
+Med venlig hilsen
+Dyrlægen
 `
             },
             {
