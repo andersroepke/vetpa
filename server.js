@@ -12,19 +12,19 @@ app.use(bodyParser.json());
 app.use(express.static('public')); // Serves the HTML file
 
 const templates = {
-    "Sygt Dyr": `1. Signalement:
+    "Sygt Dyr": `Signalement:
 - Vægt: Mangler information fra Dyrlægen
 
-2. Henvendelsesårsag:
+Henvendelsesårsag:
 Mangler information fra Dyrlægen
 
-3. Anamnese:
+Anamnese:
 Mangler information fra Dyrlægen
 
-4. Tidligere relevante sygdomsforløb:
+Tidligere relevante sygdomsforløb:
 Mangler information fra Dyrlægen
 
-5. Klinisk undersøgelse:
+Klinisk undersøgelse:
 - Almentilstand: (BAR/QAR/NR)
 - Cirkulatorisk: Slimhinder oralt er lyserøde og fugtige. Crt > 2 sek. 
 - Auskultation cor: To klare veladskilte hjertetoner, uden tegn på mislyd.
@@ -42,81 +42,81 @@ Mangler information fra Dyrlægen
 - Temperatur: Mangler information fra Dyrlægen
 - Hydreringsstatus: Mangler information fra Dyrlægen
 
-6. IPL (Initial Problem Liste):
+IPL (Initial Problem Liste):
 IPL: Mangler information fra Dyrlægen
 
-7. Vurdering:
+Vurdering:
 AD: Mangler information fra Dyrlægen
 
-8. Differentialdiagnoser:
+Differentialdiagnoser:
 Mangler information fra Dyrlægen
 
-9. Diagnostiske tests inkl. fund :
+Diagnostiske tests inkl. fund :
 Mangler information fra Dyrlægen
 
-10. Vurdering af resultater og fund:
+Vurdering af resultater og fund:
 Mangler information fra Dyrlægen
 
-11. Opdateret problemliste:
+Opdateret problemliste:
 Mangler information fra Dyrlægen
 
-12. Behandlingsplan/Procedurer:
+Behandlingsplan/Procedurer:
 Mangler information fra Dyrlægen
 
-13. Terapi:
+Terapi:
 - Forbrugt: Mangler information fra Dyrlægen
 - Udleveret: Mangler information fra Dyrlægen
 
-14. Prognose:
+Prognose:
 Mangler information fra Dyrlægen
 
-15. Plan til evt. videre forløb:
+Plan til evt. videre forløb:
 Mangler information fra Dyrlægen
 
-16. Ejervejledning:
+Ejervejledning:
 Mangler information fra Dyrlægen`,
 
-    "Kontrol SOAP": `1. Signalement:
+    "Kontrol SOAP": `Signalement:
 - Vægt: Mangler information fra Dyrlægen
 [MODELNOTE: Angiv dyrets aktuelle vægt. Notér også ændringer i vægt siden sidste konsultation, hvis det fremgår.]
 
-2. Henvendelsesårsag:
+Henvendelsesårsag:
 Mangler information fra Dyrlægen
 [MODELNOTE: Beskriv kort og præcist, hvad kontrollen drejer sig om, fx “Kommer til kontrol efter sterilisation for 10 dage siden” eller “Kontrol efter GI-problem pga. fortsat løs afføring.”]
 
-3. Subjektivt:
+Subjektivt:
 Mangler information fra Dyrlægen
 [MODELNOTE: Gengiv ejerens egne observationer. Hvornår startede symptomerne? Er der ændringer i adfærd, appetit, drikkelyst eller energi? Undgå kliniske vurderinger.]
 
-4. Objektivt:
+Objektivt:
 Mangler information fra Dyrlægen
 [MODELNOTE: Nedskriv fund fra den kliniske undersøgelse og evt. testresultater. Beskriv konkret almen tilstand, kredsløb, respiration, osv. Undlad vurderinger.]
 
-5. Vurdering:
+Vurdering:
 Mangler information fra Dyrlægen
 [MODELNOTE: Samlet analyse og faglig vurdering. Hvilke problemer er identificeret? Hvad er mest sandsynligt? Brug POMR-tankegang.]
 
-6. Plan til evt. videre forløb:
+Plan til evt. videre forløb:
 Mangler information fra Dyrlægen
 [MODELNOTE: Praktisk og handlingsorienteret plan. Inkluder fx kontrol, behandling, hjemmerutiner, og hvad der skal ske ved forværring eller manglende bedring.]
 
-7. Ejervejledning:
+Ejervejledning:
 Mangler information fra Dyrlægen
 [MODELNOTE: Kort opsummering af, hvad ejeren er informeret om. Inkluder forklaring af diagnose, behandling, opfølgning og hjemmemonitorering.]`,
 
-    "Vaccination": `1. Signalement:
+    "Vaccination": `Signalement:
 - Vægt: Mangler information fra Dyrlægen
 
-2. Henvendelsesårsag:
+Henvendelsesårsag:
 Mangler information fra Dyrlægen
 
-3. Anamnese:
+Anamnese:
 Mangler information fra Dyrlægen
 
-4. Tidligere relevante sygdomsforløb:
+Tidligere relevante sygdomsforløb:
 Mangler information fra Dyrlægen
 
-5. Klinisk undersøgelse:
+Klinisk undersøgelse:
 - Almentilstand: (BAR/QAR/NR)
 - Cirkulatorisk: Slimhinder oralt er lyserøde og fugtige. Crt > 2 sek. 
 - Auskultation cor: To klare veladskilte hjertetoner, uden tegn på mislyd.
@@ -131,62 +131,79 @@ Mangler information fra Dyrlægen
 - Mammae/testes: iab
 - BCS: _/9
 
-6. IPL (Initial Problem Liste):
+IPL (Initial Problem Liste):
 IPL: Mangler information fra Dyrlægen
 
-7. Vurdering:
+Vurdering:
 AD: Mangler information fra Dyrlægen
 
-8. Terapi:
+Terapi:
 - Forbrugt: Mangler information fra Dyrlægen
 - Udleveret: Mangler information fra Dyrlægen
 
-9. Plan til evt. videre forløb:
+Plan til evt. videre forløb:
 Mangler information fra Dyrlægen
 
-10. Ejervejledning:
+Ejervejledning:
 Mangler information fra Dyrlægen`,
 
-    "Morgenindtag": `1. Signalement:
+    "Morgenindtag": `Signalement:
 - Vægt: Mangler information fra Dyrlægen
+[MODELNOTE: Angiv vægt og noter evt. ændringer siden sidste besøg]
 
-2. Henvendelsesårsag:
+Henvendelsesårsag:
 Mangler information fra Dyrlægen
+[MODELNOTE: Beskriv kort og præcist hvorfor dyret er kommet. Fx: “Sterilisation” eller “fjernelse af tumor på venstre bagben”]
 
-3. Anamese:
+Anamese:
 Mangler information fra Dyrlægen
+[MODELNOTE: Brug standardtekst medmindre andet er angivet: "Alt går godt hjemme. Spiser og drikker som normalt. Urin og afføring afsættes uproblematisk. Ingen rejsehistorik."]
 
-4. Tidligere relevante sygdomsforløb:
+Tidligere relevante sygdomsforløb:
 Mangler information fra Dyrlægen
+[MODELNOTE: List tidligere sygdomsforløb i punktform. Skriv fx: - Hjerteproblem - Tidligere positiv for angiostrongylus]
 
-5. Fastet:
+Fastet:
 Mangler information fra Dyrlægen
+[MODELNOTE: Notér om dyret er fastet og i så fald hvor længe. Fx: "Fastet siden kl. 22 i går."]
 
-6. Klinisk undersøgelse:
+Klinisk undersøgelse:
 - Almentilstand: (BAR/QAR/NR)
-- Cirkulatorisk: Slimhinder oralt er lyserøde og fugtige. Crt > 2 sek. 
+[MODELNOTE: Vælg mellem BAR/QAR afhængigt af dyrets tilstand. Tilføj noter som fx “meget nervøs”]
+- Cirkulatorisk: Slimhinder oralt er lyserøde og fugtige. Crt > 2 sek.
+[MODELNOTE: Justér CRT-tid hvis nødvendigt. Fx "< 2 sek."]
 - Auskultation cor: To klare veladskilte hjertetoner, uden tegn på mislyd.
+[MODELNOTE: Notér mislyde hvis angivet.]
 - Auskultation pulmones: Normal vesiculær respiration bilateralt i hele lungefeltet
-- Lymfeknuder: Palperbare lymfeknuder iab. 
+[MODELNOTE: Notér evt. unormale fund som knitrelyde eller øget respirationsfrekvens]
+- Lymfeknuder: Palperbare lymfeknuder iab.
+[MODELNOTE: Notér hvis de er forstørrede eller asymmetriske]
 - BCS: _/9
+[MODELNOTE: Indsæt BCS som oplyst af dyrlægen, fx 5/9]
 - Andet
+[MODELNOTE: Notér yderligere relevante kliniske fund fx tumor, analkirtler, tandsten osv.]
 
-7. IPL (Initial Problem Liste):
-IPL 1: Mangler information fra Dyrlægen
-IPL 2: Mangler information fra Dyrlægen
-IPL 3: Mangler information fra Dyrlægen
+IPL (Initial Problem Liste):
+IPL 1: Mangler information fra Dyrlægen  
+IPL 2: Mangler information fra Dyrlægen  
+IPL 3: Mangler information fra Dyrlægen  
+[MODELNOTE: Lav nummereret liste rangeret efter alvorlighed. Brug korte, faglige formuleringer. Fx: "1. Fjernelse af mammatumor", "2. Obesitet kv. BCS 7/9"]
 
-8. Vurdering:
-Mangler information fra Dyrlægen
-AD 1: Mangler information fra Dyrlægen
-AD 2: Mangler information fra Dyrlægen
-AD 3: Mangler information fra Dyrlægen
+Vurdering:
+Mangler information fra Dyrlægen  
+AD 1: Mangler information fra Dyrlægen  
+AD 2: Mangler information fra Dyrlægen  
+AD 3: Mangler information fra Dyrlægen  
+[MODELNOTE: Hvis klinisk klar til anæstesi, skriv: “Vurderes klinisk klar til anæstesi.” Hvis et punkt ikke vurderes, skriv: “Adresseres ikke yderligere i dag.”]
 
-9. ASA-score:
-Mangler information fra Dyrlægen
+ASA-score:
+Mangler information fra Dyrlægen  
+[MODELNOTE: Indsæt ASA-score (1-5) som oplyst. Fx: “ASA 2 – mild systemisk sygdom, ikke invaliderende.”]
 
-10. Ejervejledning:
-Mangler information fra Dyrlægen`
+Ejervejledning:
+Mangler information fra Dyrlægen  
+[MODELNOTE: Brug standardtekst: "Ejer bekendt med almen risiko ved anæstesi. Aftaler ny kontakt efter opvågning." Tilføj: “Ja/nej til præanæstetisk blodprøve.” og evt. prisoverslag hvis oplyst.]
+`
 };
 
 app.post('/api/generate', async (req, res) => {
