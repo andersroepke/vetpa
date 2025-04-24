@@ -104,48 +104,72 @@ Ejervejledning:
 Mangler information fra Dyrlægen
 [MODELNOTE: Kort opsummering af, hvad ejeren er informeret om. Inkluder forklaring af diagnose, behandling, opfølgning og hjemmemonitorering.]`,
 
-    "Vaccination": `Signalement:
+    "Vaccination": `Vægt:
 - Vægt: Mangler information fra Dyrlægen
+[MODELNOTE: Notér altid dyrets aktuelle vægt. Hvis muligt, angiv ændring i forhold til sidste besøg i parentes.]
 
 Henvendelsesårsag:
 Mangler information fra Dyrlægen
+[MODELNOTE: Beskriv kort og præcist hvorfor dyret er kommet. Fx: “Sterilisation”, “fjernelse af tumor” eller “medicinsk udredning for PU/PD”.]
 
 Anamnese:
 Mangler information fra Dyrlægen
+[MODELNOTE: Brug standardtekst medmindre andet er angivet: "Alt går godt hjemme. Spiser og drikker som normalt. Urin og afføring afsættes uproblematisk. Ingen rejsehistorik."]
 
 Tidligere relevante sygdomsforløb:
 Mangler information fra Dyrlægen
+[MODELNOTE: List tidligere relevante sygdomme eller konsultationer i punktform. Fx: - Hjerteproblem, - Tidligere angiostrongylus-infektion.]
 
 Klinisk undersøgelse:
 - Almentilstand: (BAR/QAR/NR)
-- Cirkulatorisk: Slimhinder oralt er lyserøde og fugtige. Crt > 2 sek. 
+[MODELNOTE: Vælg mellem BAR/QAR. Notér også fx "meget nervøs på klinikken" hvis relevant.]
+- Cirkulatorisk: Slimhinder oralt er lyserøde og fugtige. Crt > 2 sek.
+[MODELNOTE: Justér CRT ud fra undersøgelse, fx "< 2 sek." hvis normalt.]
 - Auskultation cor: To klare veladskilte hjertetoner, uden tegn på mislyd.
-- Auskultation pulmones: Normal vesiculær respiration bilateralt i hele lungefeltet
+[MODELNOTE: Notér mislyde hvis angivet.]
+- Auskultation pulmones: Normal vesikulær respiration bilateralt i hele lungefeltet
+[MODELNOTE: Tilføj thoracoabdominal hvis det er oplyst. Notér unormale fund.]
 - Respirationstype: thoracoabdominal respiration
-- Lymfeknuder: Palperbare lymfeknuder iab. 
+[MODELNOTE: Notér her hvis anden respirationstype eller unormale lyde ses.]
+- Lymfeknuder: Palperbare lymfeknuder iab.
+[MODELNOTE: Notér evt. forstørrelse eller asymmetri.]
 - Abdomen: blød og indolent, uden tegn på patologiske udfyldninger
+[MODELNOTE: Hvis der findes tumor eller spændt abdomen, notér det her.]
 - Tænder og tandkød: iab
+[MODELNOTE: Tilføj fx tandsten eller gingivitis hvis fundet.]
 - Ører: iab
+[MODELNOTE: Notér fx cerumen, erythem, smerte ved berøring.]
 - Øjne: iab
+[MODELNOTE: Tilføj fx konjunktivitis, sekret, unormale pupiller.]
 - Bevægeapparat: iab
+[MODELNOTE: Tilføj fx halthed, stivhed, muskelatrofi.]
 - Mammae/testes: iab
+[MODELNOTE: Brug mammae for intakte hunhunde, testes for intakte hanhunde. Udelad for kastrerede hanner.]
 - BCS: _/9
+[MODELNOTE: Indsæt vurderet BCS, fx 5/9.]
 
 IPL (Initial Problem Liste):
 IPL: Mangler information fra Dyrlægen
+[MODELNOTE: Lav nummereret liste baseret på fund og anamnese. Vær fagligt kortfattet og neutral. Fx: "1. Mammatumor venstre side ca. 2 cm", "2. Øreinfektion bilateralt".]
 
 Vurdering:
 AD: Mangler information fra Dyrlægen
+[MODELNOTE: Opskriv som AD 1, AD 2 osv. For hvert: angiv om problemet er bekræftet, lokaliseret, og hvad næste skridt i udredningen er. Fx: "AD 1: Bekræftet og lokaliseret til huden. Videre udredning med allergiblodprøve og fodertrial." Skriv “Adresseres ikke yderligere i dag” hvis relevant.]
 
 Terapi:
 - Forbrugt: Mangler information fra Dyrlægen
+[MODELNOTE: Notér navn på præparat, styrke, dosis, administrationsvej, givet på klinikken. Fx: "Metacam 5 mg/ml inj. 0,2 ml sc. givet på klinikken."]
+
 - Udleveret: Mangler information fra Dyrlægen
+[MODELNOTE: Notér præparatnavn, styrke, dosering, hyppighed, varighed, indikation, forsigtighed. Fx: "Onsior 20 mg: 1 tbl. x1 dagligt i 5 dage mod smerte."]
 
 Plan til evt. videre forløb:
 Mangler information fra Dyrlægen
+[MODELNOTE: Beskriv opfølgning, kontroltidspunkt, videre diagnostik (fx ultralyd, blodprøve), og om specifik dyrlæge skal håndtere det.]
 
 Ejervejledning:
-Mangler information fra Dyrlægen`,
+Mangler information fra Dyrlægen
+[MODELNOTE: Notér kort hvad ejer blev informeret om. Brug fx: "Ejer informeret om almindelige bivirkninger ved vaccination" eller "Anbefalet tandrens indenfor 3-6 mdr."]`,
 
     "Morgenindtag": `Signalement:
 - Vægt: Mangler information fra Dyrlægen
