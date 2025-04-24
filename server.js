@@ -14,67 +14,100 @@ app.use(express.static('public')); // Serves the HTML file
 const templates = {
     "Sygt Dyr": `Signalement:
 - Vægt: Mangler information fra Dyrlægen
+[MODELNOTE: Notér altid dyrets aktuelle vægt. Hvis muligt, angiv ændring i forhold til sidste besøg i parentes. Du må gerne automatisk beregne og notere forskellen, hvis data er tilgængelig.]
 
 Henvendelsesårsag:
 Mangler information fra Dyrlægen
+[MODELNOTE: Her beskrives kort, hvorfor dyret er kommet til klinikken i dag.]
 
 Anamnese:
 Mangler information fra Dyrlægen
+[MODELNOTE: Beskriv ejerens observationer og sygdomsudvikling kronologisk og detaljeret. Medtag både positive og negative fund. Brug hele sætninger og korrekt fagsprog.]
 
 Tidligere relevante sygdomsforløb:
 Mangler information fra Dyrlægen
+[MODELNOTE: List tidligere relevante sygdomme i punktform. Brug data fra journal eller anamnese.]
 
 Klinisk undersøgelse:
 - Almentilstand: (BAR/QAR/NR)
+[MODELNOTE: Angiv BAR, QAR eller NR – og beskriv evt. nervøsitet.]
 - Cirkulatorisk: Slimhinder oralt er lyserøde og fugtige. Crt > 2 sek. 
+[MODELNOTE: Justér CRT hvis relevant. Fx < 2 sek.]
 - Auskultation cor: To klare veladskilte hjertetoner, uden tegn på mislyd.
+[MODELNOTE: Angiv evt. mislyde.]
 - Pulsrate: Mangler information fra Dyrlægen
+[MODELNOTE: Angiv pulsfrekvensen som oplyst.]
 - Auskultation pulmones: Normal vesiculær respiration bilateralt i hele lungefeltet
+[MODELNOTE: Angiv evt. knitrelyde eller mislyde.]
 - Respirationstype: thoracoabdominal respiration
+[MODELNOTE: Notér evt. andre respirationstyper eller anstrengt respiration.]
 - Lymfeknuder: Palperbare lymfeknuder iab. 
+[MODELNOTE: Notér hvis forstørrede eller asymmetriske.]
 - Abdomen: blød og indolent, uden tegn på patologiske udfyldninger
+[MODELNOTE: Angiv evt. ømhed, udfyldninger eller spændt bug.]
 - Tænder og tandkød: iab
+[MODELNOTE: Notér fx tandsten, gingivitis.]
 - Ører: iab
+[MODELNOTE: Angiv cerumen, erythem, smerte.]
 - Øjne: iab
+[MODELNOTE: Notér sekretion, inflammation, misfarvning.]
 - Bevægeapparat: iab
+[MODELNOTE: Angiv evt. halthed, stivhed.]
 - Mammae/testes: iab
+[MODELNOTE: Brug "mammae" for intakte tæver, "testes" for intakte hanhunde. Udelad for kastrerede hanner.]
 - BCS: _/9
+[MODELNOTE: Indsæt vurderet BCS (fx 5/9) som oplyst af dyrlægen.]
 - Temperatur: Mangler information fra Dyrlægen
+[MODELNOTE: Indsæt målt temperatur.]
 - Hydreringsstatus: Mangler information fra Dyrlægen
+[MODELNOTE: Angiv fx “normal”, “dehydreret”, “let nedsat hudturgor”.]
 
-IPL (Initial Problem Liste):
-IPL: Mangler information fra Dyrlægen
+IPL:
+Mangler information fra Dyrlægen
+[MODELNOTE: Skriv initial problem liste som nummereret liste i fagligt sprog, ud fra anamnese og kliniske fund.]
 
 Vurdering:
 AD: Mangler information fra Dyrlægen
+[MODELNOTE: Brug AD 1, AD 2 osv. og vurder hvert punkt: bekræftet/ikke bekræftet, lokaliseret/organsystem, diagnostisk plan.]
 
 Differentialdiagnoser:
 Mangler information fra Dyrlægen
+[MODELNOTE: Medtag både dyrlægens og fagligt relevante differentialdiagnoser. Prioritér rækkefølgen.]
 
 Diagnostiske tests inkl. fund :
 Mangler information fra Dyrlægen
+[MODELNOTE: Opsummer hvilke tests der er udført og de konkrete fund. Skriv kortfattet i korrekt fagsprog.]
 
 Vurdering af resultater og fund:
 Mangler information fra Dyrlægen
+[MODELNOTE: Evaluer fundene. Medtag dyrlægens vurdering og suppler med evidensbaseret analyse hvis relevant.]
 
 Opdateret problemliste:
 Mangler information fra Dyrlægen
+[MODELNOTE: Formuler opdateret problemliste med evt. diagnose. Brug kortfattet fagsprog.]
 
 Behandlingsplan/Procedurer:
 Mangler information fra Dyrlægen
+[MODELNOTE: Beskriv den aftalte behandlingsplan og/eller planlagte procedurer i klinisk korrekt og kortfattet form.]
 
 Terapi:
-- Forbrugt: Mangler information fra Dyrlægen
-- Udleveret: Mangler information fra Dyrlægen
+- Forbrugt: Mangler information fra Dyrlægen  
+[MODELNOTE: Notér nøjagtigt hvad der er givet i klinikken inkl. dosis og administrationsvej.]
+
+- Udleveret: Mangler information fra Dyrlægen  
+[MODELNOTE: Notér udleveret medicin inkl. styrke, dosis, administrationsform, behandlingsvarighed, indikation og evt. bivirkninger.]
 
 Prognose:
 Mangler information fra Dyrlægen
+[MODELNOTE: Angiv prognose baseret på dyrlægens information – eller vurder fagligt ud fra samlede fund.]
 
 Plan til evt. videre forløb:
 Mangler information fra Dyrlægen
+[MODELNOTE: Beskriv hvad næste skridt er, hvis bedring ikke ses. Angiv kontroltidspunkt, opfølgende tests, og om specifik dyrlæge er ønsket.]
 
 Ejervejledning:
-Mangler information fra Dyrlægen`,
+Mangler information fra Dyrlægen
+[MODELNOTE: Notér hvad ejer er informeret om. Brug evt. standardtekst ved vaccination. Angiv hvis der er givet prisoverslag.]`,
 
     "Kontrol SOAP": `Signalement:
 - Vægt: Mangler information fra Dyrlægen
