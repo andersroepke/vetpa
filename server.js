@@ -153,7 +153,20 @@ IPL: Mangler information fra Dyrlægen
 
 Vurdering:
 AD: Mangler information fra Dyrlægen
-[MODELNOTE: Opskriv som AD 1, AD 2 osv. For hvert: angiv om problemet er bekræftet, lokaliseret, og hvad næste skridt i udredningen er. Fx: "AD 1: Bekræftet og lokaliseret til huden. Videre udredning med allergiblodprøve og fodertrial." Skriv “Adresseres ikke yderligere i dag” hvis relevant.]
+[MODELNOTE: Opskriv som AD 1, AD 2 osv. i henhold til IPL.
+For hvert punkt vurderes:
+• Er problemet bekræftet? (det kan enten være ud fra anamnese eller fund på den kliniske undersøgelse. Hvis ikke det kan bekræftes som f.eks. udtalelsen ”den drikker måske lidt mere” så skrives ”Problemet er ikke bekræftet”).
+• Kan det lokaliseres til et organsystem? (f.eks. huden, kredsløbet, GI kanalen, bevægeapparatet mm. Du må gerne skrive hvor det er lokaliseret til. Hvis ikke det umiddelbart kan lokaliseres, men er bekræftet skrives ”Bekræftet, men ikke lokaliseret”. Hvis det hverken kan bekræftes eller lokaliseres skrives ”Hverken bekræftet eller lokaliseret”. Men som oftest vil det være muligt at skrive ”Bekræftet og lokaliseret til…” og indsætte relevant organsystem).
+• Hvad er den videre diagnostiske plan? (f.eks. blodprøver, urinanalyse, FNA, billeddiagnostik. Her må du gerne komme med forslag til hvad du ud fra din samlede viden tænker kunne være relevant at udføre).
+• Ved en konsultation vælger dyrlægen nogle gange ikke at beskæftige sig yderligere med et punkt. I det tilfælde skal du blot under vurdering skrive ”Adresseres ikke yderligere i dag”.
+• For vaccination: "Dyret vurderes klar til vaccination." Angiv hvis vaccination er udløbet.
+• Kom gerne med forslag til differentialdiagnoser under hvert punkt, men hold det kortfattet.
+
+Eksempel:
+AD 1: Bekræftet og lokaliseret til huden. Videre udredning med allergiblodprøve og fodertrial samt lokal rens af øret og huden mellem trædepuderne. Ddx: allergi, infektion, fremmedlegeme.
+AD 2: Bekræftet og lokaliseret til mammae. Videre udredning med FNA samt operation/histopatologi samt evt staging inden med FNA af drænerende lymfeknuder og thoraxrøntgen. Ddx: neoplasi (benign og malign), infektion.
+AD 3: Bekræftet og lokaliseret. Analkirtler tømt. Da det er første gang han har problemer med analkirtler, adresseres problemet ikke yderligere i dag.
+AD 4: Vurderes klar til vaccination. L4 udløbet, hvorfor revaccination om 3-4 uger anbefales.]
 
 Terapi:
 - Forbrugt: Mangler information fra Dyrlægen
