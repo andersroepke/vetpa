@@ -109,8 +109,7 @@ Ejervejledning:
 Mangler information fra Dyrlægen
 [MODELNOTE: Notér hvad ejer er informeret om. Brug evt. standardtekst ved vaccination. Angiv hvis der er givet prisoverslag.]`,
 
-    "Kort Journal": `
-Vægt:
+    "Kort Journal": `Vægt:
 Mangler information fra Dyrlægen
 [MODELNOTE: Notér altid dyrets aktuelle vægt. Hvis muligt, angiv ændring i forhold til sidste besøg i parentes.]
 
