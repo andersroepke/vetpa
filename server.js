@@ -109,64 +109,82 @@ Ejervejledning:
 Mangler information fra Dyrlægen
 [MODELNOTE: Notér hvad ejer er informeret om. Brug evt. standardtekst ved vaccination. Angiv hvis der er givet prisoverslag.]`,
 
-    "Kort Journal": ` 
- 1. Signalement:
-       - Dato: Mangler information fra Dyrlægen
-       - Navn: Mangler information fra Dyrlægen
-       - ID: Mangler information fra Dyrlægen
-       - Race: Mangler information fra Dyrlægen
-       - Alder: Mangler information fra Dyrlægen
-       - Køn: Mangler information fra Dyrlægen
-       - Neutralisering: Mangler information fra Dyrlægen
-       - Vægt: Mangler information fra Dyrlægen
-       
-       2. Henvendelsesårsag:
-       Mangler information fra Dyrlægen
-       
-       3. Anamnese:
-       Mangler information fra Dyrlægen
-       
-       4. Klinisk undersøgelse:
-       - Almentilstand: (BAR/QAR/NR)
-       - Cirkulatorisk: Slimhinder oralt er lyserøde og fugtige. Crt > 2 sek. 
-       - Auskultation cor: To klare veladskilte hjertetoner, uden tegn på mislyd.
-       - Pulsrate: Mangler information fra Dyrlægen
-       - Auskultation pulmones: Normal vesiculær respiration bilateralt i hele lungefeltet
-       - Respirationstype: thoracoabdominal respiration
-       - Lymfeknuder: Palperbare lymfeknuder iab. 
-       - Abdomen: blød og indolent, uden tegn på patologiske udfyldninger
-       - Tænder og tandkød: iab
-       - Ører: iab
-       - Øjne: iab
-       - Bevægeapparat: iab
-       - Mammae/testes: iab
-       - BCS: _/9
-       - Temperatur: Mangler information fra Dyrlægen
-       - Hydreringsstatus: Mangler information fra Dyrlægen
-       
-       5. IPL (Initial Problem Liste):
-       IPL: Mangler information fra Dyrlægen
-       
-       6. Differentialdiagnoser:
-       Mangler information fra Dyrlægen
-       
-       7. Diagnostiske tests inkl. fund :
-       - Blodprøver: Mangler information fra Dyrlægen
-       - Billeddiagnostik: Mangler information fra Dyrlægen
-       - Urinanalyse: ingen information
-       - Afføringsprøver: ingen information
-       - Indsendte prøver: ingen information om bar-code
-       
-       8. Terapi:
-       - Forbrugt: Mangler information fra Dyrlægen
-       - Udleveret: Mangler information fra Dyrlægen
-       
-       9. Plan til evt. videre forløb:
-       Mangler information fra Dyrlægen
-       
-       10. Ejervejledning:
-       Mangler information fra Dyrlægen
-     `,
+    "Kort Journal": `
+Vægt:
+Mangler information fra Dyrlægen
+[MODELNOTE: Notér altid dyrets aktuelle vægt. Hvis muligt, angiv ændring i forhold til sidste besøg i parentes.]
+
+Henvendelsesårsag:
+Mangler information fra Dyrlægen
+[MODELNOTE: Her beskrives kort, hvorfor dyret er kommet til klinikken i dag.]
+
+Anamnese:
+Mangler information fra Dyrlægen
+[MODELNOTE: Beskriv i detaljer sygdomsudviklingen i kronologisk rækkefølge, både positive og negative fund. Brug klinisk korrekt fagsprog.]
+
+Klinisk undersøgelse:
+- Almentilstand: (BAR/QAR/NR)
+[MODELNOTE: Vælg BAR, QAR eller NR afhængigt af almen tilstand. Notér evt. nervøsitet.]
+- Cirkulatorisk: Slimhinder oralt er lyserøde og fugtige. Crt > 2 sek.
+[MODELNOTE: Ret CRT hvis nødvendigt, fx "< 2 sek."]
+- Auskultation cor: To klare veladskilte hjertetoner, uden tegn på mislyd.
+[MODELNOTE: Notér evt. mislyde.]
+- Pulsrate: Mangler information fra Dyrlægen
+[MODELNOTE: Angiv pulsfrekvens som oplyst.]
+- Auskultation pulmones: Normal vesikulær respiration bilateralt i hele lungefeltet
+[MODELNOTE: Notér evt. unormale fund.]
+- Respirationstype: thoracoabdominal respiration
+[MODELNOTE: Notér evt. ændret respirationstype.]
+- Lymfeknuder: Palperbare lymfeknuder iab.
+[MODELNOTE: Notér hvis lymfeknuder er forstørrede eller asymmetriske.]
+- Abdomen: blød og indolent, uden tegn på patologiske udfyldninger
+[MODELNOTE: Angiv evt. ømhed, spændt bug, tumor.]
+- Tænder og tandkød: iab
+[MODELNOTE: Notér fx tandsten, gingivitis hvis fundet.]
+- Ører: iab
+[MODELNOTE: Notér evt. cerumen, erythem, smerte.]
+- Øjne: iab
+[MODELNOTE: Notér evt. sekretion, inflammation, ændret pupilrespons.]
+- Bevægeapparat: iab
+[MODELNOTE: Notér fx halthed, stivhed, nedsat bevægelighed.]
+- Mammae/testes: iab
+[MODELNOTE: Brug "mammae" ved intakte tæver, "testes" ved intakte hanner. Udelad hvis kastreret hanhund.]
+- BCS: _/9
+[MODELNOTE: Indsæt Body Condition Score som X/9, oplyst af dyrlægen.]
+- Temperatur: Mangler information fra Dyrlægen
+[MODELNOTE: Indsæt målt temperatur.]
+- Hydreringsstatus: Mangler information fra Dyrlægen
+[MODELNOTE: Beskriv hydreringsstatus, fx "normal", "dehydreret".]
+
+IPL:
+Mangler information fra Dyrlægen
+[MODELNOTE: Formuler en nummereret problem-liste efter alvorlighed. Brug neutral og korrekt faglig formulering.]
+
+Differentialdiagnoser:
+Mangler information fra Dyrlægen
+[MODELNOTE: List både dyrlægens og relevante faglige differentialdiagnoser i prioriteret rækkefølge.]
+
+Diagnostiske tests inkl. fund:
+- Blodprøver: Mangler information fra Dyrlægen
+- Billeddiagnostik: Mangler information fra Dyrlægen
+- Urinanalyse: ingen information
+- Afføringsprøver: ingen information
+- Indsendte prøver: ingen information om bar-code
+[MODELNOTE: Opsummer kort hvilke tests er lavet og hvilke fund der er gjort, i korrekt fagsprog.]
+
+Terapi:
+- Forbrugt: Mangler information fra Dyrlægen
+- Udleveret: Mangler information fra Dyrlægen
+[MODELNOTE: Angiv forbrugt medicin (styrke, dosis, administrationsvej) og udleveret medicin (styrke, dosering, behandlingsperiode, indikation, bivirkninger). Brug viden fra www.vetisearch.dk med mindre dyrlægen angiver andet.]
+
+Plan til evt. videre forløb:
+Mangler information fra Dyrlægen
+[MODELNOTE: Beskriv næste skridt ved manglende bedring, foreslå videre diagnostik, opfølgningstidspunkt, og om en bestemt dyrlæge ønskes.]
+
+Ejervejledning:
+Mangler information fra Dyrlægen
+[MODELNOTE: Kortfattet vejledning til ejer. Ved vaccination kan standardtekst anvendes: "Ejer informeret om almindelige bivirkninger ved vaccination." Notér evt. anbefaling om tandrens.]
+`
 
     "Kontrol SOAP": `Signalement:
 - Vægt: Mangler information fra Dyrlægen
